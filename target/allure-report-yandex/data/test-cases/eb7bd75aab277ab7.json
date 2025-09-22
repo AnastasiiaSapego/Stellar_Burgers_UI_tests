@@ -1,0 +1,67 @@
+{
+  "uid" : "eb7bd75aab277ab7",
+  "name" : "registrationWrongPassword",
+  "fullName" : "ru.practikum.RegistrationTest.registrationWrongPassword",
+  "historyId" : "63e5828a4c5b5a715262e9c9e0d9b91f",
+  "time" : {
+    "start" : 1758532166967,
+    "stop" : 1758532171593,
+    "duration" : 4626
+  },
+  "description" : "Пароль короче 6 символов — должна появиться ошибка",
+  "descriptionHtml" : "<p>Пароль короче 6 символов — должна появиться ошибка</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.practikum"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.practikum.RegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "registrationWrongPassword"
+  }, {
+    "name" : "suite",
+    "value" : "ru.practikum.RegistrationTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Anastasia-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "44102@MacBook-Pro-Anastasia-2.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Ошибка при коротком пароле"
+  }, {
+    "name" : "epic",
+    "value" : "UI"
+  }, {
+    "name" : "feature",
+    "value" : "Регистрация"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "eb7bd75aab277ab7.json",
+  "parameterValues" : [ ]
+}

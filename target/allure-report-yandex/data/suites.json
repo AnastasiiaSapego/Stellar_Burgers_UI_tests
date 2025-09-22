@@ -1,0 +1,134 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "ru.practikum.RegistrationTest",
+    "children" : [ {
+      "name" : "registrationWrongPassword",
+      "uid" : "eb7bd75aab277ab7",
+      "parentUid" : "f90c65647e5be2525be5961245f29dca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532166967,
+        "stop" : 1758532171593,
+        "duration" : 4626
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "checkSuccessRegistration",
+      "uid" : "181009b7e0c6cf0f",
+      "parentUid" : "f90c65647e5be2525be5961245f29dca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532171617,
+        "stop" : 1758532176172,
+        "duration" : 4555
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f90c65647e5be2525be5961245f29dca"
+  }, {
+    "name" : "ru.practikum.SwitchSectionTest",
+    "children" : [ {
+      "name" : "saucesTab",
+      "uid" : "9e8ab817414a3a17",
+      "parentUid" : "bcce47d56d5339e18f076620f35d806a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532176180,
+        "stop" : 1758532179950,
+        "duration" : 3770
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "bunsTab",
+      "uid" : "e89503e955ee3845",
+      "parentUid" : "bcce47d56d5339e18f076620f35d806a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532179951,
+        "stop" : 1758532184635,
+        "duration" : 4684
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "fillingsTab",
+      "uid" : "4abc135350959c7f",
+      "parentUid" : "bcce47d56d5339e18f076620f35d806a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532184639,
+        "stop" : 1758532188207,
+        "duration" : 3568
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "bcce47d56d5339e18f076620f35d806a"
+  }, {
+    "name" : "ru.practikum.SignInTest",
+    "children" : [ {
+      "name" : "loginFromHeaderPersonalAccount",
+      "uid" : "e1d50a06ea235241",
+      "parentUid" : "a98e4ef369395aa8fb829b46bcdd4e83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532188210,
+        "stop" : 1758532211776,
+        "duration" : 23566
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginFromMainButton",
+      "uid" : "99b0031f6b2f2203",
+      "parentUid" : "a98e4ef369395aa8fb829b46bcdd4e83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532211781,
+        "stop" : 1758532234485,
+        "duration" : 22704
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginFromRegistrationForm",
+      "uid" : "79fd752a0332914d",
+      "parentUid" : "a98e4ef369395aa8fb829b46bcdd4e83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532234489,
+        "stop" : 1758532257639,
+        "duration" : 23150
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "loginFromPasswordRecoveryForm",
+      "uid" : "ccf0e76d3543bdfc",
+      "parentUid" : "a98e4ef369395aa8fb829b46bcdd4e83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758532257642,
+        "stop" : 1758532265035,
+        "duration" : 7393
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a98e4ef369395aa8fb829b46bcdd4e83"
+  } ]
+}

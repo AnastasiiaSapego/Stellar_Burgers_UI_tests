@@ -1,0 +1,130 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "MacBook-Pro-Anastasia-2.local",
+    "children" : [ {
+      "name" : "43768@MacBook-Pro-Anastasia-2.local.main(1)",
+      "children" : [ {
+        "name" : "loginFromRegistrationForm",
+        "uid" : "d0743801a72ea12e",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531948159,
+          "stop" : 1758531970756,
+          "duration" : 22597
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromMainButton",
+        "uid" : "233962795365c45a",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531942599,
+          "stop" : 1758531948156,
+          "duration" : 5557
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "registrationWrongPassword",
+        "uid" : "d22ea0a263eaf12c",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531916957,
+          "stop" : 1758531921308,
+          "duration" : 4351
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromPasswordRecoveryForm",
+        "uid" : "bc671339af316908",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531970760,
+          "stop" : 1758531992416,
+          "duration" : 21656
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromHeaderPersonalAccount",
+        "uid" : "8656a1ab3ac4a006",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531935992,
+          "stop" : 1758531942595,
+          "duration" : 6603
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkSuccessRegistration",
+        "uid" : "f05f58a3372c78ed",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531921332,
+          "stop" : 1758531925864,
+          "duration" : 4532
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "fillingsTab",
+        "uid" : "e56bb70f0c0ed04e",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531933075,
+          "stop" : 1758531935989,
+          "duration" : 2914
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "bunsTab",
+        "uid" : "432fa190535c21aa",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531929423,
+          "stop" : 1758531933072,
+          "duration" : 3649
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "saucesTab",
+        "uid" : "9b88592e7de47b4",
+        "parentUid" : "40de66de431fac786348eb77e5aa3e93",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758531925872,
+          "stop" : 1758531929422,
+          "duration" : 3550
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "40de66de431fac786348eb77e5aa3e93"
+    } ],
+    "uid" : "8bad30c76ac5bd125b5edbc5d8eec396"
+  } ]
+}

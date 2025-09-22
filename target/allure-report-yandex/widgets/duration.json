@@ -1,0 +1,91 @@
+[ {
+  "uid" : "ccf0e76d3543bdfc",
+  "name" : "loginFromPasswordRecoveryForm",
+  "time" : {
+    "start" : 1758532257642,
+    "stop" : 1758532265035,
+    "duration" : 7393
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4abc135350959c7f",
+  "name" : "fillingsTab",
+  "time" : {
+    "start" : 1758532184639,
+    "stop" : 1758532188207,
+    "duration" : 3568
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "99b0031f6b2f2203",
+  "name" : "loginFromMainButton",
+  "time" : {
+    "start" : 1758532211781,
+    "stop" : 1758532234485,
+    "duration" : 22704
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e89503e955ee3845",
+  "name" : "bunsTab",
+  "time" : {
+    "start" : 1758532179951,
+    "stop" : 1758532184635,
+    "duration" : 4684
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb7bd75aab277ab7",
+  "name" : "registrationWrongPassword",
+  "time" : {
+    "start" : 1758532166967,
+    "stop" : 1758532171593,
+    "duration" : 4626
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "181009b7e0c6cf0f",
+  "name" : "checkSuccessRegistration",
+  "time" : {
+    "start" : 1758532171617,
+    "stop" : 1758532176172,
+    "duration" : 4555
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e8ab817414a3a17",
+  "name" : "saucesTab",
+  "time" : {
+    "start" : 1758532176180,
+    "stop" : 1758532179950,
+    "duration" : 3770
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79fd752a0332914d",
+  "name" : "loginFromRegistrationForm",
+  "time" : {
+    "start" : 1758532234489,
+    "stop" : 1758532257639,
+    "duration" : 23150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1d50a06ea235241",
+  "name" : "loginFromHeaderPersonalAccount",
+  "time" : {
+    "start" : 1758532188210,
+    "stop" : 1758532211776,
+    "duration" : 23566
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,130 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "MacBook-Pro-Anastasia-2.local",
+    "children" : [ {
+      "name" : "44102@MacBook-Pro-Anastasia-2.local.main(1)",
+      "children" : [ {
+        "name" : "checkSuccessRegistration",
+        "uid" : "181009b7e0c6cf0f",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532171617,
+          "stop" : 1758532176172,
+          "duration" : 4555
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "saucesTab",
+        "uid" : "9e8ab817414a3a17",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532176180,
+          "stop" : 1758532179950,
+          "duration" : 3770
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromHeaderPersonalAccount",
+        "uid" : "e1d50a06ea235241",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532188210,
+          "stop" : 1758532211776,
+          "duration" : 23566
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromRegistrationForm",
+        "uid" : "79fd752a0332914d",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532234489,
+          "stop" : 1758532257639,
+          "duration" : 23150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "bunsTab",
+        "uid" : "e89503e955ee3845",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532179951,
+          "stop" : 1758532184635,
+          "duration" : 4684
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "fillingsTab",
+        "uid" : "4abc135350959c7f",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532184639,
+          "stop" : 1758532188207,
+          "duration" : 3568
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromPasswordRecoveryForm",
+        "uid" : "ccf0e76d3543bdfc",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532257642,
+          "stop" : 1758532265035,
+          "duration" : 7393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "registrationWrongPassword",
+        "uid" : "eb7bd75aab277ab7",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532166967,
+          "stop" : 1758532171593,
+          "duration" : 4626
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "loginFromMainButton",
+        "uid" : "99b0031f6b2f2203",
+        "parentUid" : "843b11d018bbdd10a4cf6b7d6ed01844",
+        "status" : "passed",
+        "time" : {
+          "start" : 1758532211781,
+          "stop" : 1758532234485,
+          "duration" : 22704
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "843b11d018bbdd10a4cf6b7d6ed01844"
+    } ],
+    "uid" : "8bad30c76ac5bd125b5edbc5d8eec396"
+  } ]
+}
