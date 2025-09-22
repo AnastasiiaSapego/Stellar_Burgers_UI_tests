@@ -1,15 +1,16 @@
 package ru.practikum;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public final class DriverFactory {
     private DriverFactory() {}
 
     public static WebDriver create() {
-        String browser = getProp("BROWSER", "chrome").toLowerCase();
+        String browser  = getProp("BROWSER", "chrome").toLowerCase();
         boolean headless = Boolean.parseBoolean(getProp("HEADLESS", "false"));
 
         ChromeOptions options = new ChromeOptions();
@@ -27,6 +28,8 @@ public final class DriverFactory {
                 if (yaBin != null && !yaBin.isEmpty()) {
                     options.setBinary(yaBin);
                 }
+
+                options.addArguments("--disable-infobars", "--disable-notifications");
                 return new ChromeDriver(options);
             }
             default: {
