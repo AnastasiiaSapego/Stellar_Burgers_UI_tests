@@ -1,8 +1,9 @@
 package ru.practikum;
 
-import io.qameta.allure.*;
-import org.junit.Assert;
-import org.junit.Test;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.junit4.DisplayName;
+import org.junit.*;
 import ru.practikum.pageobject.MainPageWithoutSignIn;
 
 @Epic("UI")
@@ -10,16 +11,17 @@ import ru.practikum.pageobject.MainPageWithoutSignIn;
 public class SwitchSectionTest extends BaseTest {
 
     @Test
-    @Story("Переход к разделу 'Булки'")
+    @DisplayName("Переход к разделу 'Булки' (через другой раздел)")
     public void bunsTab() {
         driver.get(MainPageWithoutSignIn.URL);
         MainPageWithoutSignIn main = new MainPageWithoutSignIn(driver);
+        main.clickSauceSection();
         main.clickBunSection();
         Assert.assertEquals("Булки", main.getSelectedSectionText());
     }
 
     @Test
-    @Story("Переход к разделу 'Соусы'")
+    @DisplayName("Переход к разделу 'Соусы'")
     public void saucesTab() {
         driver.get(MainPageWithoutSignIn.URL);
         MainPageWithoutSignIn main = new MainPageWithoutSignIn(driver);
@@ -28,7 +30,7 @@ public class SwitchSectionTest extends BaseTest {
     }
 
     @Test
-    @Story("Переход к разделу 'Начинки'")
+    @DisplayName("Переход к разделу 'Начинки'")
     public void fillingsTab() {
         driver.get(MainPageWithoutSignIn.URL);
         MainPageWithoutSignIn main = new MainPageWithoutSignIn(driver);

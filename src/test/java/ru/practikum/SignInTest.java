@@ -1,13 +1,12 @@
 package ru.practikum;
 
 import io.qameta.allure.*;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.Assert;
-import ru.practikum.api.User;
-import ru.practikum.api.UserClient;
+import io.qameta.allure.junit4.DisplayName;
+import org.junit.*;
+import ru.practikum.api.*;
 import ru.practikum.pageobject.*;
+
+import static org.apache.http.HttpStatus.*;
 
 @Epic("UI")
 @Feature("Вход в аккаунт")
@@ -19,13 +18,17 @@ public class SignInTest extends BaseTest {
     @Before
     public void setupUser() {
         user = UserClient.randomUser();
-        UserClient.register(user).statusCode(200);
-        token = UserClient.loginAndGetToken(user);
+        UserClient.register(user).statusCode(SC_OK);
+
+        token = UserClient.extractAccessToken(UserClient.login(user));
+        Assert.assertNotNull("Не удалось получить accessToken тестового пользователя", token);
     }
 
     @After
     public void cleanupUser() {
-        UserClient.delete(token);
+        if (token != null) {
+            UserClient.delete(token).statusCode(SC_ACCEPTED);
+        }
     }
 
     private void uiLogin() {
@@ -35,12 +38,15 @@ public class SignInTest extends BaseTest {
         signIn.clickSignInButtonInSignInForm();
 
         MainPageWithSignIn main = new MainPageWithSignIn(driver);
-        Assert.assertEquals("Ожидали на странице кнопку 'Оформить заказ'", "Оформить заказ",
-                main.waitAndGetMakeOrderButtonText());
+        Assert.assertEquals(
+                "Ожидали на странице кнопку 'Оформить заказ'",
+                "Оформить заказ",
+                main.waitAndGetMakeOrderButtonText()
+        );
     }
 
     @Test
-    @Story("Вход по кнопке 'Войти в аккаунт' на главной")
+    @DisplayName("Вход по кнопке «Войти в аккаунт» на главной")
     public void loginFromMainButton() {
         driver.get(MainPageWithoutSignIn.URL);
         new MainPageWithoutSignIn(driver).clickSignInButtonInMainPage();
@@ -48,7 +54,7 @@ public class SignInTest extends BaseTest {
     }
 
     @Test
-    @Story("Вход через кнопку 'Личный кабинет'")
+    @DisplayName("Вход через кнопку «Личный кабинет»")
     public void loginFromHeaderPersonalAccount() {
         driver.get(MainPageWithoutSignIn.URL);
         new MainPageWithoutSignIn(driver).clickPersonalAccButton();
@@ -56,7 +62,7 @@ public class SignInTest extends BaseTest {
     }
 
     @Test
-    @Story("Вход через кнопку в форме регистрации")
+    @DisplayName("Вход через кнопку в форме регистрации")
     public void loginFromRegistrationForm() {
         driver.get(MainPageWithoutSignIn.URL);
         new MainPageWithoutSignIn(driver).clickSignInButtonInMainPage();
@@ -64,11 +70,12 @@ public class SignInTest extends BaseTest {
         SignInForm signIn = new SignInForm(driver);
         signIn.clickRegistrationButtonInSignInForm();
         new RegistrationForm(driver).clickSignInButtonInRegistrationForm();
+
         uiLogin();
     }
 
     @Test
-    @Story("Вход через форму восстановления пароля")
+    @DisplayName("Вход через кнопку в форме восстановления пароля")
     public void loginFromPasswordRecoveryForm() {
         driver.get(MainPageWithoutSignIn.URL);
         new MainPageWithoutSignIn(driver).clickSignInButtonInMainPage();
@@ -78,6 +85,7 @@ public class SignInTest extends BaseTest {
 
         PasswordRecoveryForm pr = new PasswordRecoveryForm(driver);
         pr.clickSignInButtonInPasswordRecoveryForm();
+
         uiLogin();
     }
 }

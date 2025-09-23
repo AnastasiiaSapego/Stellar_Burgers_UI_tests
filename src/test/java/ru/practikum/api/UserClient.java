@@ -2,41 +2,49 @@ package ru.practikum.api;
 
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.http.ContentType;
-import io.restassured.response.ValidatableResponse;
+import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import static io.restassured.RestAssured.given;
+import static ru.practikum.api.Endpoints.*;
 
 public class UserClient {
-    private static final String BASE = "https://stellarburgers.nomoreparties.site";
 
     public static User randomUser() {
         String s = RandomStringUtils.randomAlphanumeric(10);
         return new User("auto_" + s + "@yandex.ru", "Pwd" + s, "User" + s);
     }
 
-    public static ValidatableResponse register(User u) {
+    public static io.restassured.response.ValidatableResponse register(User u) {
         return given().filter(new AllureRestAssured())
+                .baseUri(BASE)
                 .contentType(ContentType.JSON)
                 .body(u)
-                .post(BASE + "/api/auth/register")
+                .post(REGISTER)
                 .then();
     }
 
-    public static String loginAndGetToken(User u) {
+    public static Response login(User u) {
         return given().filter(new AllureRestAssured())
+                .baseUri(BASE)
                 .contentType(ContentType.JSON)
-                .body("{\"email\":\"" + u.email + "\",\"password\":\"" + u.password + "\"}")
-                .post(BASE + "/api/auth/login")
-                .then().statusCode(200)
-                .extract().path("accessToken");
+                .body(new LoginRequest(u.email, u.password))
+                .post(LOGIN);
     }
 
-    public static void delete(String accessToken) {
-        if (accessToken == null) return;
-        given().filter(new AllureRestAssured())
+    public static String extractAccessToken(Response resp) {
+        try {
+            return resp.then().extract().path("accessToken");
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+    public static io.restassured.response.ValidatableResponse delete(String accessToken) {
+        return given().filter(new AllureRestAssured())
+                .baseUri(BASE)
                 .header("Authorization", accessToken)
-                .delete(BASE + "/api/auth/user")
-                .then().statusCode(202);
+                .delete(USER)
+                .then();
     }
 }

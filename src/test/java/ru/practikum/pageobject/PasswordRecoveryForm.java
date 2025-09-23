@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class PasswordRecoveryForm {
     private final WebDriver driver;
-    private By signInButtonInPasswordRecoveryForm = By.cssSelector("#root > div > main > div > div > p > a");
+    private By signInButtonInPasswordRecoveryForm = By.xpath("//main//a[normalize-space()='Войти']");
 
     public PasswordRecoveryForm(WebDriver driver) { this.driver = driver; }
 
