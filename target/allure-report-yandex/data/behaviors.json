@@ -1,0 +1,174 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "UI",
+    "children" : [ {
+      "name" : "Регистрация",
+      "children" : [ {
+        "name" : "Ошибка при коротком пароле",
+        "children" : [ {
+          "name" : "registrationWrongPassword",
+          "uid" : "eb7bd75aab277ab7",
+          "parentUid" : "493465b7a75574505b311206235aa60b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532166967,
+            "stop" : 1758532171593,
+            "duration" : 4626
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "493465b7a75574505b311206235aa60b"
+      }, {
+        "name" : "Успешная регистрация нового пользователя",
+        "children" : [ {
+          "name" : "checkSuccessRegistration",
+          "uid" : "181009b7e0c6cf0f",
+          "parentUid" : "20fe954246d33a847dbccecacba4378f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532171617,
+            "stop" : 1758532176172,
+            "duration" : 4555
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "20fe954246d33a847dbccecacba4378f"
+      } ],
+      "uid" : "280f0626d64fae8fdb431fdc4fb200b8"
+    }, {
+      "name" : "Конструктор",
+      "children" : [ {
+        "name" : "Переход к разделу 'Соусы'",
+        "children" : [ {
+          "name" : "saucesTab",
+          "uid" : "9e8ab817414a3a17",
+          "parentUid" : "c3dae745ff5fd919f0d6a38953c01bf1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532176180,
+            "stop" : 1758532179950,
+            "duration" : 3770
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "c3dae745ff5fd919f0d6a38953c01bf1"
+      }, {
+        "name" : "Переход к разделу 'Булки'",
+        "children" : [ {
+          "name" : "bunsTab",
+          "uid" : "e89503e955ee3845",
+          "parentUid" : "5f642da0a7d19b9eac23950cc8b01974",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532179951,
+            "stop" : 1758532184635,
+            "duration" : 4684
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "5f642da0a7d19b9eac23950cc8b01974"
+      }, {
+        "name" : "Переход к разделу 'Начинки'",
+        "children" : [ {
+          "name" : "fillingsTab",
+          "uid" : "4abc135350959c7f",
+          "parentUid" : "05f013faf8547583a080eefece7096dd",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532184639,
+            "stop" : 1758532188207,
+            "duration" : 3568
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "05f013faf8547583a080eefece7096dd"
+      } ],
+      "uid" : "3a013fd5bd13787988329db008cf461a"
+    }, {
+      "name" : "Вход в аккаунт",
+      "children" : [ {
+        "name" : "Вход через кнопку 'Личный кабинет'",
+        "children" : [ {
+          "name" : "loginFromHeaderPersonalAccount",
+          "uid" : "e1d50a06ea235241",
+          "parentUid" : "3e29c5be81255d56607e49603e9f0fd1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532188210,
+            "stop" : 1758532211776,
+            "duration" : 23566
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "3e29c5be81255d56607e49603e9f0fd1"
+      }, {
+        "name" : "Вход по кнопке 'Войти в аккаунт' на главной",
+        "children" : [ {
+          "name" : "loginFromMainButton",
+          "uid" : "99b0031f6b2f2203",
+          "parentUid" : "16f58d2296d8eaa770104f4d243813c1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532211781,
+            "stop" : 1758532234485,
+            "duration" : 22704
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "16f58d2296d8eaa770104f4d243813c1"
+      }, {
+        "name" : "Вход через кнопку в форме регистрации",
+        "children" : [ {
+          "name" : "loginFromRegistrationForm",
+          "uid" : "79fd752a0332914d",
+          "parentUid" : "e94b337fa1566cfa511723a9483c567d",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532234489,
+            "stop" : 1758532257639,
+            "duration" : 23150
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e94b337fa1566cfa511723a9483c567d"
+      }, {
+        "name" : "Вход через форму восстановления пароля",
+        "children" : [ {
+          "name" : "loginFromPasswordRecoveryForm",
+          "uid" : "ccf0e76d3543bdfc",
+          "parentUid" : "df533eac74f782f47e7c01125598f5fc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758532257642,
+            "stop" : 1758532265035,
+            "duration" : 7393
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "df533eac74f782f47e7c01125598f5fc"
+      } ],
+      "uid" : "fd3ca5a6102fbdebf089f0198276004f"
+    } ],
+    "uid" : "2a437c110576bbbc005c3de13baf9be0"
+  } ]
+}

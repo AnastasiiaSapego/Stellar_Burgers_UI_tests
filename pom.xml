@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Diplom_3</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <selenium.version>4.25.0</selenium.version>
+        <wdm.version>5.8.0</wdm.version>
+        <allure.version>2.27.0</allure.version>
+        <allure.maven.plugin.version>2.12.0</allure.maven.plugin.version>
+        <surefire.version>3.2.5</surefire.version>
+
+        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+        <BROWSER>chrome</BROWSER>
+        <WAIT_TIMEOUT>12</WAIT_TIMEOUT>
+        <YA_DRIVER_PATH></YA_DRIVER_PATH>
+        <YA_BROWSER_BIN></YA_BROWSER_BIN>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${wdm.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit4</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-rest-assured</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.4.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.14.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.version}</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <allure.results.directory>${allure.results.directory}</allure.results.directory>
+                        <BROWSER>${BROWSER}</BROWSER>
+                        <WAIT_TIMEOUT>${WAIT_TIMEOUT}</WAIT_TIMEOUT>
+                        <YA_DRIVER_PATH>${YA_DRIVER_PATH}</YA_DRIVER_PATH>
+                        <YA_BROWSER_BIN>${YA_BROWSER_BIN}</YA_BROWSER_BIN>
+                    </systemPropertyVariables>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>io.qameta.allure.junit4.AllureJunit4</value>
+                        </property>
+                    </properties>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure.maven.plugin.version}</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>chrome</id>
+            <properties>
+                <BROWSER>chrome</BROWSER>
+                <WAIT_TIMEOUT>12</WAIT_TIMEOUT>
+                <allure.results.directory>${project.build.directory}/allure-results-chrome</allure.results.directory>
+                <YA_DRIVER_PATH></YA_DRIVER_PATH>
+                <YA_BROWSER_BIN></YA_BROWSER_BIN>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>yandex</id>
+            <properties>
+                <BROWSER>yandex</BROWSER>
+                <WAIT_TIMEOUT>15</WAIT_TIMEOUT>
+                <allure.results.directory>${project.build.directory}/allure-results-yandex</allure.results.directory>
+                <YA_DRIVER_PATH>${YA_DRIVER_PATH}</YA_DRIVER_PATH>
+                <YA_BROWSER_BIN>${YA_BROWSER_BIN}</YA_BROWSER_BIN>
+            </properties>
+        </profile>
+    </profiles>
+</project>

@@ -1,0 +1,65 @@
+{
+  "uid" : "9b88592e7de47b4",
+  "name" : "saucesTab",
+  "fullName" : "ru.practikum.SwitchSectionTest.saucesTab",
+  "historyId" : "859d31f52637dedcf25ef04647c2e55a",
+  "time" : {
+    "start" : 1758531925872,
+    "stop" : 1758531929422,
+    "duration" : 3550
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.practikum"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.practikum.SwitchSectionTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "saucesTab"
+  }, {
+    "name" : "suite",
+    "value" : "ru.practikum.SwitchSectionTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Anastasia-2.local"
+  }, {
+    "name" : "thread",
+    "value" : "43768@MacBook-Pro-Anastasia-2.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Переход к разделу 'Соусы'"
+  }, {
+    "name" : "epic",
+    "value" : "UI"
+  }, {
+    "name" : "feature",
+    "value" : "Конструктор"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9b88592e7de47b4.json",
+  "parameterValues" : [ ]
+}
